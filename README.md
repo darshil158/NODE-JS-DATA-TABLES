@@ -26,6 +26,8 @@
 **Run in POSTMAN**
 
 <img width="660" height="312" alt="image" src="https://github.com/user-attachments/assets/92f8381a-d2a0-4815-b97b-d4ca923254d8" />
+<img width="1058" height="233" alt="image" src="https://github.com/user-attachments/assets/a06c56ba-cf5e-42c0-99ad-f126ba73d94b" />
+<img width="1592" height="963" alt="image" src="https://github.com/user-attachments/assets/131cc844-f42c-481c-b071-bd647ef2e9b3" />
 
 # POSTMAN 
 ## BOOK API IN POSTMAN
