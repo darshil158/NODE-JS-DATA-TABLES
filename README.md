@@ -1,5 +1,28 @@
 # NODE-JS-DATA-TABLES
 
+## How to Run
+
+1. Download the ZIP file from this GitHub repository.
+2. Extract the ZIP file to your desired location.
+3. Open the extracted project folder in VS Code or a terminal.
+4. Install the required dependencies:
+
+   ```bash
+   npm install
+   ```
+
+5. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+6. Open the API in your browser:
+
+   [http://localhost:3000](http://localhost:3000)
+
+**Note:** If the project requires environment variables, create a `.env` file with the required configuration before starting the server. Make sure MongoDB is configured and accessible.
+**Run in POSTMAN**
 
 <img width="660" height="312" alt="image" src="https://github.com/user-attachments/assets/92f8381a-d2a0-4815-b97b-d4ca923254d8" />
 
