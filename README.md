@@ -3,9 +3,9 @@
 ## How to Run
 
 1. Download the ZIP file from this GitHub repository.
-2. Extract the ZIP file to your desired location.
-3. Open the extracted project folder in VS Code or a terminal.
-4. Install the required dependencies:
+2. Extract the ZIP file.
+3. Open the extracted project folder in your terminal.
+4. Install dependencies:
 
    ```bash
    npm install
@@ -17,11 +17,12 @@
    npm run dev
    ```
 
-6. Open the API in your browser:
+6. Access the API:
 
-   [http://localhost:3000](http://localhost:3000)
+   - **API Root:** [http://localhost:3000](http://localhost:3000)
+   - **Get All Books:** [http://localhost:3000/api/books/](http://localhost:3000/api/books/)
 
-**Note:** If the project requires environment variables, create a `.env` file with the required configuration before starting the server. Make sure MongoDB is configured and accessible.
+**Note:** Ensure your `.env` file and MongoDB connection are configured before starting the server.
 **Run in POSTMAN**
 
 <img width="660" height="312" alt="image" src="https://github.com/user-attachments/assets/92f8381a-d2a0-4815-b97b-d4ca923254d8" />
