@@ -1,0 +1,225 @@
+{
+  "info": {
+    "_postman_id": "eff769b3-0d7a-4234-9091-6bc20ebd74f6",
+    "name": "DATA TABLES",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "58897100",
+    "_collection_link": "https://go.postman.co/collection/58897100-eff769b3-0d7a-4234-9091-6bc20ebd74f6?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "BOOK STORE API",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"The Great Gatsby\",\n  \"author\": \"F. Scott Fitzgerald\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "ADD BOOK DATA",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\r\n  {\r\n    \"title\": \"The Great Gatsby\",\r\n    \"author\": \"F. Scott Fitzgerald\",\r\n    \"price\": 559,\r\n    \"category\": \"Financial\",\r\n    \"description\": \"A classic novel about wealth and ambition.\",\r\n    \"stock\": 2\r\n  },\r\n  {\r\n    \"title\": \"Atomic Habits\",\r\n    \"author\": \"James Clear\",\r\n    \"price\": 399,\r\n    \"category\": \"Self Help\",\r\n    \"description\": \"A guide to building good habits.\",\r\n    \"stock\": 20\r\n  },\r\n  {\r\n    \"title\": \"Rich Dad Poor Dad\",\r\n    \"author\": \"Robert T. Kiyosaki\",\r\n    \"price\": 349,\r\n    \"category\": \"Financial\",\r\n    \"description\": \"Lessons about money and financial literacy.\",\r\n    \"stock\": 15\r\n  },\r\n  {\r\n    \"title\": \"The Alchemist\",\r\n    \"author\": \"Paulo Coelho\",\r\n    \"price\": 299,\r\n    \"category\": \"Fiction\",\r\n    \"description\": \"A young shepherd follows his dreams.\",\r\n    \"stock\": 12\r\n  },\r\n  {\r\n    \"title\": \"Clean Code\",\r\n    \"author\": \"Robert C. Martin\",\r\n    \"price\": 650,\r\n    \"category\": \"Programming\",\r\n    \"description\": \"Principles for writing readable and maintainable code.\",\r\n    \"stock\": 8\r\n  },\r\n  {\r\n    \"title\": \"Deep Work\",\r\n    \"author\": \"Cal Newport\",\r\n    \"price\": 425,\r\n    \"category\": \"Productivity\",\r\n    \"description\": \"Strategies for focused and distraction-free work.\",\r\n    \"stock\": 10\r\n  },\r\n  {\r\n    \"title\": \"The Psychology of Money\",\r\n    \"author\": \"Morgan Housel\",\r\n    \"price\": 375,\r\n    \"category\": \"Financial\",\r\n    \"description\": \"Stories about money, behavior, and decision-making.\",\r\n    \"stock\": 18\r\n  },\r\n  {\r\n    \"title\": \"Harry Potter and the Philosopher's Stone\",\r\n    \"author\": \"J. K. Rowling\",\r\n    \"price\": 499,\r\n    \"category\": \"Fantasy\",\r\n    \"description\": \"A young wizard discovers the magical world.\",\r\n    \"stock\": 7\r\n  },\r\n  {\r\n    \"title\": \"Introduction to Algorithms\",\r\n    \"author\": \"Thomas H. Cormen\",\r\n    \"price\": 899,\r\n    \"category\": \"Programming\",\r\n    \"description\": \"A comprehensive guide to computer algorithms.\",\r\n    \"stock\": 5\r\n  },\r\n  {\r\n    \"title\": \"Think and Grow Rich\",\r\n    \"author\": \"Napoleon Hill\",\r\n    \"price\": 275,\r\n    \"category\": \"Self Help\",\r\n    \"description\": \"Principles of personal achievement and success.\",\r\n    \"stock\": 14\r\n  }\r\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/books",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "books"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET ALL BOOKS",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/books",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "books"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET BOOK THROUGH ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/books/6ad65873938450c69aa3b45f",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "books",
+            "6ad65873938450c69aa3b45f"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "UPDATE BOOK",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"title\": \"The Great Gatsby\",\r\n    \"author\": \"F. Scott Fitzgerald\",\r\n    \"price\": 1999,\r\n    \"category\": \"Financial\",\r\n    \"description\": \"A classic novel about wealth and ambition.\",\r\n    \"stock\": 2\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/books/6ad65873938450c69aa3b45f",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "books",
+            "6ad65873938450c69aa3b45f"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DELETE BOOK THROUGH ID",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/books/6ad65873938450c69aa3b45f",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "books",
+            "6ad65873938450c69aa3b45f"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PAGINATION",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/books?page=1&limit=5",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "books"
+          ],
+          "query": [
+            {
+              "key": "page",
+              "value": "1"
+            },
+            {
+              "key": "limit",
+              "value": "5"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "SEARCH",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/books?search=atomic",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "books"
+          ],
+          "query": [
+            {
+              "key": "search",
+              "value": "atomic"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
