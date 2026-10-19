@@ -27,4 +27,5 @@
 <img width="1420" height="906" alt="image" src="https://github.com/user-attachments/assets/fd58c52a-7214-40f1-9ba1-6a7cb007bec4" />
 
 ## SEARCH 
+<img width="1425" height="907" alt="image" src="https://github.com/user-attachments/assets/c5b9443f-f46a-4a7f-a4d4-2440c5cc657a" />
 
