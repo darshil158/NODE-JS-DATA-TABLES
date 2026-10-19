@@ -26,11 +26,22 @@ exports.getBooks = async (req, res) => {
       limit = 100;
     }
 
+    const search = req.query.search;
+
+    const filter = {};
+
+    if (search) {
+      filter.$or = [
+        { title: { $regex: search, $options: "i" } },
+        { author: { $regex: search, $options: "i" } },
+      ];
+    }
+
     const skip = (page - 1) * limit;
 
-    const books = await Book.find().skip(skip).limit(limit);
+    const books = await Book.find(filter).skip(skip).limit(limit);
 
-    const totalBooks = await Book.countDocuments();
+    const totalBooks = await Book.countDocuments(filter);
 
     res.status(200).json({
       success: true,
